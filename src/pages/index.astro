@@ -1,16 +1,99 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="CodeFinal - Fire Prevention SaaS">
+	<main>
+		<!-- Hero Section -->
+		<section class="bg-gradient-to-r from-red-600 to-orange-600 text-white">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+				<div class="text-center">
+					<h1 class="text-4xl md:text-6xl font-bold mb-6">
+						CodeFinal
+					</h1>
+					<p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+						Streamline Fire Prevention Operations with Comprehensive Inspection, Permitting, and Pre-Planning Solutions
+					</p>
+					<div class="space-x-4">
+						<button class="bg-white text-red-600 font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition duration-300">
+							Get Started
+						</button>
+						<button class="border-2 border-white text-white font-semibold px-8 py-3 rounded-lg hover:bg-white hover:text-red-600 transition duration-300">
+							Learn More
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Features Section -->
+		<section class="py-20 bg-white">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center mb-16">
+					<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+						Comprehensive Fire Prevention Solutions
+					</h2>
+					<p class="text-xl text-gray-600 max-w-2xl mx-auto">
+						Empower your fire prevention team with modern tools designed for efficiency and compliance
+					</p>
+				</div>
+
+				<div class="grid md:grid-cols-3 gap-8">
+					<!-- Fire Inspection -->
+					<div class="text-center p-8 rounded-lg border border-gray-200 hover:shadow-lg transition duration-300">
+						<div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mx-auto mb-6">
+							<svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-semibold text-gray-900 mb-4">Fire Inspection</h3>
+						<p class="text-gray-600">
+							Digital inspection forms, automated scheduling, and comprehensive reporting tools to streamline your inspection workflow.
+						</p>
+					</div>
+
+					<!-- Permitting -->
+					<div class="text-center p-8 rounded-lg border border-gray-200 hover:shadow-lg transition duration-300">
+						<div class="w-16 h-16 bg-orange-100 rounded-lg flex items-center justify-center mx-auto mb-6">
+							<svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-semibold text-gray-900 mb-4">Permitting</h3>
+						<p class="text-gray-600">
+							Streamlined permit application processing, tracking, and management with automated workflows and compliance monitoring.
+						</p>
+					</div>
+
+					<!-- Pre-Planning -->
+					<div class="text-center p-8 rounded-lg border border-gray-200 hover:shadow-lg transition duration-300">
+						<div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-6">
+							<svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-semibold text-gray-900 mb-4">Pre-Planning</h3>
+						<p class="text-gray-600">
+							Comprehensive building layouts, water supply mapping, and tactical planning tools for emergency preparedness.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA Section -->
+		<section class="bg-gray-900 text-white py-20">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+				<h2 class="text-3xl md:text-4xl font-bold mb-4">
+					Ready to Transform Your Fire Prevention Operations?
+				</h2>
+				<p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+					Join fire departments across the country using CodeFinal to improve efficiency and ensure community safety.
+				</p>
+				<button class="bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-3 rounded-lg transition duration-300">
+					Start Your Free Trial
+				</button>
+			</div>
+		</section>
+	</main>
+</Layout>
